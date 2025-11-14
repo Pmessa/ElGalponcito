@@ -1,0 +1,121 @@
+:root {
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #2c3e50;
+  --gap: 14px;
+  --radius: 12px;
+  --card-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Encabezado */
+.page-header {
+  text-align: center;
+  padding: 1.75rem 1rem 0.75rem;
+}
+.page-header h1 {
+  margin: 0.25rem 0 0.4rem;
+  font-size: 2.2rem;
+  color: var(--accent);
+}
+.page-header h2 {
+  margin: 0;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+/* Lista de artículos */
+.listado {
+  display: grid;
+  gap: var(--gap);
+  padding: 0 1rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.articulo {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.articulo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+/* Imagen del artículo */
+.imagen-articulo {
+  margin: 0 0 10px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.imagen-articulo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Texto del artículo */
+.titulo-articulo {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+.descripcion {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Pie de página */
+.page-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Responsividad */
+@media (min-width: 560px) {
+  .listado {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 900px) {
+  .listado {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.precio {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #27ae60; /* verde agradable */
+  margin-top: 8px;
+  text-align: right; /* alineado a la derecha dentro de la tarjeta */
+}
+
+.articulo:hover .precio {
+  color: #2ecc71; /* tono más claro al hacer hover */
+}
