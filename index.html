@@ -3,140 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>El galpón de Pablo - Artículos en venta</title>
     <meta
       name="description"
       content="Listado estático de artículos en venta de El galpón de Pablo"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Encabezado -->
     <header class="page-header" aria-label="Encabezado de la tienda">
       <h1>El galpón de Pablo</h1>
       <h2>Todo de remate</h2>
+      <button class="hamburger-menu" aria-label="Abrir menú">
+        <span class="hamburger-icon"></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#deporte">Deporte</a></li>
+          <li><a href="#cocina">Cocina</a></li>
+          <li><a href="#varios">Varios</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- Contenido principal -->
     <main class="listado" aria-label="Artículos en venta">
-      <!-- Artículo 1 -->
-      <section class="articulo" aria-labelledby="titulo-1">
-        <figure class="imagen-articulo">
-          <img src="img/bandaselasticas.jpg" alt="Imagen de Artículo 1" />
-        </figure>
-        <h3 id="titulo-1" class="titulo-articulo">Bandas Elásticas</h3>
-        <p class="descripcion">Juego de bandas elásticas 3 tensiones</p>
-        <p class="precio">$5.000</p>
+      <!-- Sección Deporte -->
+      <section id="deporte" class="category-section">
+        <h2 class="category-title">Deporte</h2>
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/bandasAbiertas.png" alt="Bandas Elásticas Abiertas" />
+              <img src="img/bandaselasticas.jpg" alt="Bandas Elásticas Cerradas" />
+            </div>
+            <button class="carousel-button prev" aria-label="Imagen anterior">❮</button>
+            <button class="carousel-button next" aria-label="Imagen siguiente">❯</button>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Kit Bandas Elásticas</h3>
+            <p class="descripcion">
+              Set completo de bandas elásticas para entrenamientos de fuerza y resistencia.
+            </p>
+            <p class="precio">$15.000 ARS</p>
+          </div>
+        </div>
       </section>
 
-      <!-- Artículo 2 -->
-      <section class="articulo" aria-labelledby="titulo-2">
-        <figure class="imagen-articulo">
-          <img src="img/pesas1.jpg" alt="Imagen de Artículo 2" />
-        </figure>
-        <h3 id="titulo-2" class="titulo-articulo">Mancuernas 1kg</h3>
-        <p class="descripcion">Mancuernas recubiertas en vinilo</p>
-        <p class="precio">$10.000</p>
+      <!-- Sección Cocina -->
+      <section id="cocina" class="category-section">
+        <h2 class="category-title">Cocina</h2>
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="https://via.placeholder.com/600x400/95a5a6/ffffff?text=Olla+Acero+Inox" alt="Olla de Acero Inoxidable" />
+              <img src="https://via.placeholder.com/600x400/bdc3c7/ffffff?text=Olla+con+tapa" alt="Olla con tapa detalle" />
+            </div>
+            <button class="carousel-button prev" aria-label="Imagen anterior">❮</button>
+            <button class="carousel-button next" aria-label="Imagen siguiente">❯</button>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Olla de Acero Inoxidable</h3>
+            <p class="descripcion">Olla grande con tapa, ideal para guisos y sopas.</p>
+            <p class="precio">$25.000 ARS</p>
+          </div>
+        </div>
       </section>
 
-      <!-- Artículo 3 -->
-      <section class="articulo" aria-labelledby="titulo-2">
-        <figure class="imagen-articulo">
-          <img src="img/pesas2.png" alt="Imagen de Artículo 2" />
-        </figure>
-        <h3 id="titulo-2" class="titulo-articulo">Mancuernas 2kg</h3>
-        <p class="descripcion">Mancuernas recubiertas en vinilo</p>
-        <p class="precio">$12.000</p>
-      </section>
-
-      <!-- Artículo 4 -->
-      <section class="articulo" aria-labelledby="titulo-4">
-        <figure class="imagen-articulo">
-          <img
-            src="img/bandasAbiertas.png"
-            alt="Imagen de Artículo 4"
-          />
-        </figure>
-        <h3 id="titulo-4" class="titulo-articulo">Bandas elasticas 1,50 mts</h3>
-        <p class="descripcion">Bandas elasticas 1,50 mts tensión Alta y Media      (Latex)</p>
-         <p class="precio">$5.000</p>
-      </section>
-
-      <!-- Artículo 5 -->
-      <section class="articulo" aria-labelledby="titulo-5">
-        <figure class="imagen-articulo">
-          <img
-            src="img/discosBody.png"
-            alt="Imagen de Artículo 5"
-          />
-        </figure>
-        <h3 id="titulo-5" class="titulo-articulo">DISCO BODY PUMP</h3>
-        <p class="descripcion">DISCO BODY PUMP 1Kg</p>
-        <p class="precio">$3.000</p>
-      </section>
-
-      <!-- Artículo 6 -->
-      <section class="articulo" aria-labelledby="titulo-6">
-        <figure class="imagen-articulo">
-          <img
-            src="img/discosBody.png"
-            alt="Imagen de Artículo 6"
-          />
-        </figure>
-        <h3 id="titulo-6" class="titulo-articulo">DISCO BODY PUMP</h3>
-        <p class="descripcion">DISCO BODY PUMP 2.5Kg</p>
-        <p class="precio">$4.000</p>
-      </section>
-
-      <!-- Artículo 7 -->
-      <section class="articulo" aria-labelledby="titulo-7">
-        <figure class="imagen-articulo">
-          <img
-            src="img/mancuernas.png"
-            alt="Imagen de Artículo 7"
-          />
-        </figure>
-        <h3 id="titulo-7" class="titulo-articulo">Mancuernas con tope BODY PUMP</h3>
-        <p class="descripcion">Mancuernas con tope BODY PUMP</p>
-          <p class="precio">$6.000</p>
-      </section>
-
-      <!-- Artículo 8 -->
-      <section class="articulo" aria-labelledby="titulo-8">
-        <figure class="imagen-articulo">
-          <img
-            src="https://via.placeholder.com/600x400/34495e/ffffff?text=Artículo+8"
-            alt="Imagen de Artículo 8"
-          />
-        </figure>
-        <h3 id="titulo-8" class="titulo-articulo">Artículo 8</h3>
-        <p class="descripcion">Breve descripción del artículo 8.</p>
-      </section>
-
-      <!-- Artículo 9 -->
-      <section class="articulo" aria-labelledby="titulo-9">
-        <figure class="imagen-articulo">
-          <img src="img/maceterotriple.jpeg" alt="maceteroTriple" />
-        </figure>
-        <h3 id="titulo-9" class="titulo-articulo">Macetero Triple</h3>
-        <p class="descripcion">Macetero Triple madera pintada con cetol</p>
-        <p class="precio">$30.000</p>
-      </section>
-
-      <!-- Artículo 10 -->
-      <section class="articulo" aria-labelledby="titulo-10">
-        <figure class="imagen-articulo">
-          <img
-            src="https://via.placeholder.com/600x400/2980b9/ffffff?text=Artículo+10"
-            alt="Imagen de Artículo 10"
-          />
-        </figure>
-        <h3 id="titulo-10" class="titulo-articulo">Artículo 10</h3>
-        <p class="descripcion">Breve descripción del artículo 10.</p>
-        <p></p>
+      <!-- Sección Varios -->
+      <section id="varios" class="category-section">
+        <h2 class="category-title">Varios</h2>
+        <div class="articulo" data-estado="vendido">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="https://via.placeholder.com/600x400/34495e/ffffff?text=Artículo+Varios" alt="Imagen de artículo varios" />
+              <img src="https://via.placeholder.com/600x400/2c3e50/ffffff?text=Detalle+Artículo+Varios" alt="Detalle del artículo varios" />
+            </div>
+            <button class="carousel-button prev" aria-label="Imagen anterior">❮</button>
+            <button class="carousel-button next" aria-label="Imagen siguiente">❯</button>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Artículo Varios</h3>
+            <p class="descripcion">Producto versátil para el hogar.</p>
+            <p class="precio">$7.500 ARS</p>
+            <span class="estado-vendido">Vendido</span>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="page-footer" aria-label="Pie de página">
       <p>&copy; 2025 El galpón de Pablo - Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
