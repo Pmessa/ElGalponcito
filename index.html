@@ -1,107 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El galpón de Pablo - Artículos en venta</title>
-    <meta
-      name="description"
-      content="Listado estático de artículos en venta de El galpón de Pablo"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Encabezado -->
-    <header class="page-header" aria-label="Encabezado de la tienda">
-      <h1>El galpón de Pablo</h1>
-      <h2>Todo de remate</h2>
-      <button class="hamburger-menu" aria-label="Abrir menú">
-        <span class="hamburger-icon"></span>
-      </button>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#deporte">Deporte</a></li>
-          <li><a href="#cocina">Cocina</a></li>
-          <li><a href="#varios">Varios</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Contenido principal -->
-    <main class="listado" aria-label="Artículos en venta">
-      <!-- Sección Deporte -->
-      <section id="deporte" class="category-section">
-        <h2 class="category-title">Deporte</h2>
-        <div class="articulo" data-estado="disponible">
-          <div class="imagen-articulo carousel-container" aria-live="polite">
-            <div class="carousel-track">
-              <img src="img/bandasAbiertas.png" alt="Bandas Elásticas Abiertas" />
-              <img src="img/bandaselasticas.jpg" alt="Bandas Elásticas Cerradas" />
-              <img src="img/bandaselasticas.jpg" alt="Bandas Elásticas Cerradas" />
-              <img src="img/bandaselasticas.jpg" alt="Bandas Elásticas Cerradas" />
-            </div>
-            
-            <div class="carousel-indicators"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El galpón de Pablo - Artículos en venta</title>
+  <meta name="description" content="Listado estático de artículos en venta de El galpón de Pablo" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header class="page-header" aria-label="Encabezado de la tienda">
+    <h1>El galpón de Pablo</h1>
+    <h2>Todo de remate</h2>
+    <button class="hamburger-menu" aria-label="Abrir menú">
+      <span class="hamburger-icon"></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#deporte">Deporte</a></li>
+        <li><a href="#cocina">Cocina</a></li>
+        <li><a href="#varios">Varios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="listado" aria-label="Artículos en venta">
+    <!-- Sección Deporte -->
+    <section id="deporte" class="category-section">
+      <h2 class="category-title">Deporte</h2>
+      <div class="articulo" data-estado="disponible">
+        <div class="imagen-articulo carousel-container" aria-live="polite">
+          <div class="carousel-track">
+            <img src="img/bandasAbiertas.png" alt="Bandas Elásticas Abiertas" />
           </div>
+          <div class="carousel-indicators"></div>
+        </div>
+        <div class="articulo-content">
+          <h3 class="titulo-articulo">Kit Bandas Elásticas abiertas</h3>
+          <p class="descripcion">
+            Set completo de bandas elásticas para estiramiento y
+            rehabilitación.
+          </p>
+          <p class="precio">$5.000 ARS</p>
+        </div>
+      </div>
+      <div class="articulo" data-estado="disponible">
+        <div class="imagen-articulo carousel-container" aria-live="polite">
+          <div class="carousel-track">
+            <img src="img/bandaselasticas.jpg" alt="Bandas Elásticas Cerradas" />
+          </div>
+
+          <div class="carousel-indicators"></div>
+        </div>
+        <div class="articulo-content">
+          <h3 class="titulo-articulo">Kit Bandas Elásticas</h3>
+          <p class="descripcion">
+            Set completo de bandas elásticas para entrenamientos de fuerza y
+            resistencia.
+          </p>
+          <p class="precio">$5.000 ARS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Cocina -->
+    <section id="cocina" class="category-section">
+      <h2 class="category-title">Cocina</h2>
+      <div class="articulo" data-estado="disponible">
+        <div class="imagen-articulo carousel-container" aria-live="polite">
+          <div class="carousel-track">
+            <img src="img/CampanaTorta01.jpeg" alt="Campana para torta plastica" />
+            <img src="img/CampanaTorta02.jpeg" alt="Campana para torta plastica" />
+          </div>
+          <div class="carousel-indicators"></div>
+        </div>
+        <div class="articulo-content">
+          <h3 class="titulo-articulo">Campana para tortas</h3>
+          <p class="descripcion">
+            Campana de PVC para transporte o exhibición de tortas.
+          </p>
+          <p class="precio">$5.000 ARS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Varios -->    
+     <section id="Varios" class="category-section">
+      <h2 class="category-title">Varios</h2>
+      <div class="articulo" data-estado="disponible">
+        <div class="imagen-articulo carousel-container" aria-live="polite">
+          <div class="carousel-track">
+            <img src="img/maceterotriple.jpeg" alt="maceterotriple" />
+          </div>
+          <div class="carousel-indicators"></div>
+        </div>
+        <div class="articulo-content">
+          <h3 class="titulo-articulo">Macetero Triple</h3>
+          <p class="descripcion">
+            Especial para crear tu huerta de aromáticas en un pequeño espacio.
+          </p>
+          <p class="precio">$30.000 ARS</p>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="varios" class="category-section">
+      <h2 class="category-title">Varios</h2>
+      <div class="articulo" data-estado="disponible">
+        <div class="imagen-articulo carousel-container" aria-live="polite">
+          <div class="carousel-track">
+            <img src="img/maceterotriple.jpeg" alt="Imagen de artículo varios" />
+          </div>
+          <div class="carousel-indicators"></div>
           <div class="articulo-content">
-            <h3 class="titulo-articulo">Kit Bandas Elásticas</h3>
-            <p class="descripcion">
-              Set completo de bandas elásticas para entrenamientos de fuerza y resistencia.
-            </p>
-            <p class="precio">$15.000 ARS</p>
+            <h3 class="titulo-articulo">Macetero Triple</h3>
+            <p class="descripcion">Especial para crear tu huerta de aromáticas en un pequeño espacio.</p>
+            <p class="precio">$30.000 ARS</p>
           </div>
         </div>
-      </section>
+    </section> -->
+  </main>
 
-      <!-- Sección Cocina -->
-      <section id="cocina" class="category-section">
-        <h2 class="category-title">Cocina</h2>
-        <div class="articulo" data-estado="disponible">
-          <div class="imagen-articulo carousel-container" aria-live="polite">
-            <div class="carousel-track">
-              <img src="https://via.placeholder.com/600x400/95a5a6/ffffff?text=Olla+Acero+Inox" alt="Olla de Acero Inoxidable" />
-              <img src="https://via.placeholder.com/600x400/bdc3c7/ffffff?text=Olla+con+tapa" alt="Olla con tapa detalle" />
-            </div>
-            <button class="carousel-button prev" aria-label="Imagen anterior">❮</button>
-            <button class="carousel-button next" aria-label="Imagen siguiente">❯</button>
-            <div class="carousel-indicators"></div>
-          </div>
-          <div class="articulo-content">
-            <h3 class="titulo-articulo">Olla de Acero Inoxidable</h3>
-            <p class="descripcion">Olla grande con tapa, ideal para guisos y sopas.</p>
-            <p class="precio">$25.000 ARS</p>
-          </div>
-        </div>
-      </section>
+  <!-- Footer -->
+  <footer class="page-footer" aria-label="Pie de página">
+    <p>&copy; 2025 El galpón de Pablo - Todos los derechos reservados.</p>
+  </footer>
 
-      <!-- Sección Varios -->
-      <section id="varios" class="category-section">
-        <h2 class="category-title">Varios</h2>
-        <div class="articulo" data-estado="vendido">
-          <div class="imagen-articulo carousel-container" aria-live="polite">
-            <div class="carousel-track">
-              <img src="https://via.placeholder.com/600x400/34495e/ffffff?text=Artículo+Varios" alt="Imagen de artículo varios" />
-              <img src="https://via.placeholder.com/600x400/2c3e50/ffffff?text=Detalle+Artículo+Varios" alt="Detalle del artículo varios" />
-            </div>
-            <button class="carousel-button prev" aria-label="Imagen anterior">❮</button>
-            <button class="carousel-button next" aria-label="Imagen siguiente">❯</button>
-            <div class="carousel-indicators"></div>
-          </div>
-          <div class="articulo-content">
-            <h3 class="titulo-articulo">Artículo Varios</h3>
-            <p class="descripcion">Producto versátil para el hogar.</p>
-            <p class="precio">$7.500 ARS</p>
-            <span class="estado-vendido">Vendido</span>
-          </div>
-        </div>
-      </section>
-    </main>
+  <script src="script.js"></script>
+</body>
 
-    <!-- Footer -->
-    <footer class="page-footer" aria-label="Pie de página">
-      <p>&copy; 2025 El galpón de Pablo - Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
 </html>
