@@ -1,368 +1,436 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El galpón de Pablo - Artículos en venta</title>
+    <meta
+      name="description"
+      content="Listado estático de artículos en venta de El galpón de Pablo"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El galpón de Pablo - Artículos en venta</title>
-  <meta name="description" content="Listado estático de artículos en venta de El galpón de Pablo" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!-- Encabezado -->
+    <header class="page-header" aria-label="Encabezado de la tienda">
+      <h1>El galpón de Pablo</h1>
+      <h2>Todo de remate</h2>
+      <button class="hamburger-menu" aria-label="Abrir menú">
+        <span class="hamburger-icon"></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#deporte">Deporte</a></li>
+          <li><a href="#cocina">Cocina</a></li>
+          <li><a href="#Herramientas">Herramientas</a></li>
+          <li><a href="#varios">Varios</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <!-- Encabezado -->
-  <header class="page-header" aria-label="Encabezado de la tienda">
-    <h1>El galpón de Pablo</h1>
-    <h2>Todo de remate</h2>
-    <button class="hamburger-menu" aria-label="Abrir menú">
-      <span class="hamburger-icon"></span>
-    </button>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#deporte">Deporte</a></li>
-        <li><a href="#cocina">Cocina</a></li>
-        <li><a href="#Herramientas">Herramientas</a></li>
-        <li><a href="#varios">Varios</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Contenido principal -->
-  <main class="listado" aria-label="Artículos en venta">
-    <!-- Sección Deporte -->
-    <section id="deporte" class="category-section">
-      <h2 class="category-title">Deporte</h2>
-      <!-- Deportes 01 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/bandasAbiertas.png" alt="Bandas Elásticas Abiertas" />
+    <!-- Contenido principal -->
+    <main class="listado" aria-label="Artículos en venta">
+      <!-- Sección Deporte -->
+      <section id="deporte" class="category-section">
+        <h2 class="category-title">Deporte</h2>
+        <!-- Deportes 01 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img
+                src="img/bandasAbiertas.png"
+                alt="Bandas Elásticas Abiertas"
+              />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Kit Bandas Elásticas abiertas</h3>
+            <p class="descripcion">
+              Set completo de bandas elásticas para estiramiento y
+              rehabilitación.
+            </p>
+            <p class="precio">$5.000 ARS</p>
+          </div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Kit Bandas Elásticas abiertas</h3>
-          <p class="descripcion">
-            Set completo de bandas elásticas para estiramiento y
-            rehabilitación.
-          </p>
-          <p class="precio">$5.000 ARS</p>
-        </div>
-      </div>
         <!-- Deportes 02 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/bandaselasticas.jpg" alt="Bandas Elásticas Cerradas" />
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img
+                src="img/bandaselasticas.jpg"
+                alt="Bandas Elásticas Cerradas"
+              />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Kit Bandas Elásticas</h3>
-          <p class="descripcion">
-            Set completo de bandas elásticas para entrenamientos de fuerza y
-            resistencia.
-          </p>
-          <p class="precio">$5.000 ARS</p>
-        </div>
-      </div>
-     <!-- Deportes 03 -->
-            <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/mancuernas4kgi.jpeg" alt="Mancuernas" />
-             <img src="img/mancuernas4kilos.jpg" alt="Mancuernas" />
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Kit Bandas Elásticas</h3>
+            <p class="descripcion">
+              Set completo de bandas elásticas para entrenamientos de fuerza y
+              resistencia.
+            </p>
+            <p class="precio">$5.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Mancuerna 4kg (2 unidades en stock)</h3>
-          <p class="descripcion">
-         Mancuernas de 4kg cada una, ideales para entrenamientos de fuerza y resistencia. (1 mancuerna y 4 discos de 1kg c/u)
-          </p>
-          <p class="precio">$18.000 ARS</p>
-        </div>
-      </div>
-      <!-- Deportes 04 -->
-                   <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/mancuernas5kg.jpeg" alt="Mancuernas" />
+        <!-- Deportes 03 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/mancuernas4kgi.jpeg" alt="Mancuernas" />
+              <img src="img/mancuernas4kilos.jpg" alt="Mancuernas" />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Mancuerna 5kg (1 unidad en stock)</h3>
-          <p class="descripcion">
-         Mancuernas de 5kg cada una, ideales para entrenamientos de fuerza y resistencia. (1 mancuerna y 2 discos de 2.5kg c/u)
-          </p>
-          <p class="precio">$14.000 ARS</p>
-        </div>
-      </div>
-      <!--Deportes 05  -->
-                         <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/pesas1.jpg" alt="Mancuernas" />
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Mancuerna 4kg (2 unidades en stock)</h3>
+            <p class="descripcion">
+              Mancuernas de 4kg cada una, ideales para entrenamientos de fuerza
+              y resistencia. (1 mancuerna y 4 discos de 1kg c/u)
+            </p>
+            <p class="precio">$18.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Par de mancuernas de 1kg con recubrimiento vinilico</h3>
-          <p class="descripcion">
-         mancuernas de 1kg cada una, recubrimiento vinilico de excelente calidad, ideales para entrenamientos de fuerza y resistencia.
-          </p>
-          <p class="precio">$12.000 ARS</p>
-        </div>
-      </div>
-            <!--Deportes 06  -->
-                         <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/pesas2.png" alt="Mancuernas" />
+        <!-- Deportes 04 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/mancuernas5kg.jpeg" alt="Mancuernas" />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Mancuerna 5kg (1 unidad en stock)</h3>
+            <p class="descripcion">
+              Mancuernas de 5kg cada una, ideales para entrenamientos de fuerza
+              y resistencia. (1 mancuerna y 2 discos de 2.5kg c/u)
+            </p>
+            <p class="precio">$14.000 ARS</p>
+          </div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Par de mancuernas de 2kg con recubrimiento vinilico</h3>
-          <p class="descripcion">
-         mancuernas de 2kg cada una, recubrimiento vinilico de excelente calidad, ideales para entrenamientos de fuerza y resistencia.
-          </p>
-          <p class="precio">$15.000 ARS</p>
+        <!--Deportes 05  -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/pesas1.jpg" alt="Mancuernas" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">
+              Par de mancuernas de 1kg con recubrimiento vinilico
+            </h3>
+            <p class="descripcion">
+              mancuernas de 1kg cada una, recubrimiento vinilico de excelente
+              calidad, ideales para entrenamientos de fuerza y resistencia.
+            </p>
+            <p class="precio">$12.000 ARS</p>
+          </div>
         </div>
-      </div>
-    </section>
+        <!--Deportes 06  -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/pesas2.png" alt="Mancuernas" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">
+              Par de mancuernas de 2kg con recubrimiento vinilico
+            </h3>
+            <p class="descripcion">
+              mancuernas de 2kg cada una, recubrimiento vinilico de excelente
+              calidad, ideales para entrenamientos de fuerza y resistencia.
+            </p>
+            <p class="precio">$15.000 ARS</p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Sección Cocina -->
-    <section id="cocina" class="category-section">
-      <h2 class="category-title">Cocina</h2>
-      <!-- Artículos de cocina 01 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/CampanaTorta01.jpeg" alt="Campana para torta plastica" />
-            <img src="img/CampanaTorta02.jpeg" alt="Campana para torta plastica" />
+      <!-- Sección Cocina -->
+      <section id="cocina" class="category-section">
+        <h2 class="category-title">Cocina</h2>
+        <!-- Artículos de cocina 01 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img
+                src="img/CampanaTorta01.jpeg"
+                alt="Campana para torta plastica"
+              />
+              <img
+                src="img/CampanaTorta02.jpeg"
+                alt="Campana para torta plastica"
+              />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Campana para tortas</h3>
-          <p class="descripcion">
-            Campana de PVC para transporte o exhibición de tortas.
-          </p>
-          <p class="precio">$5.000 ARS</p>
-        </div>
-      </div>
- <!-- Artículos Cocina 02 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/Mando.jpg" alt="Mando" />
-            <img src="img/Mando1.jpg" alt="Mando1" />            
-            <img src="img/Mando2.jpg" alt="Mando2" />            
-            <img src="img/Mando3.jpg" alt="Mando3" />            
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Campana para tortas</h3>
+            <p class="descripcion">
+              Campana de PVC para transporte o exhibición de tortas.
+            </p>
+            <p class="precio">$5.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Mandolina Profesional USA</h3>
-          <p class="descripcion">
-            Mandolina corte profesional con múltiples accesorios para diferentes tipos de corte.
-          </p>
-          <p class="precio">$30.000 ARS</p>
-        </div>
-      </div>
-            <!-- Artículos de cocina 03 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/Jarro1.jpeg" alt="Jarro1" />
-            <img src="img/Jarro.jpeg" alt="Jarro" />
+        <!-- Artículos Cocina 02 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/Mando.jpg" alt="Mando" />
+              <img src="img/Mando1.jpg" alt="Mando1" />
+              <img src="img/Mando2.jpg" alt="Mando2" />
+              <img src="img/Mando3.jpg" alt="Mando3" />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Jarro vIBRA 7180 fondo difusor c/tapa 2lts</h3>
-          <p class="descripcion">
-           Jarro de 2 lts acero inox 3 fondos marca Vibra
-          </p>
-          <p class="precio">$100.000 ARS</p>
-        </div>
-      </div>
-            <!-- Artículos de cocina 04 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/Asadera.jpeg" alt="Asadera" />
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Mandolina Profesional USA</h3>
+            <p class="descripcion">
+              Mandolina corte profesional con múltiples accesorios para
+              diferentes tipos de corte.
+            </p>
+            <p class="precio">$30.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Asadera horno 42cm x 34cm</h3>
-          <p class="descripcion">
-           Asadera para horno de 42cm x 34cm de acero esmaltado.
-          </p>
-          <p class="precio">Precio por unidad</p>
-          <p class="precio">$5.000 ARS</p>
-        </div>
-      </div>
-    </section>
- <!-- Sección Varios -->    
-     <section id="Herramientas" class="category-section">
-      <h2 class="category-title">Herramientas</h2>
-      <!-- Artículos Varios 01 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/caja1.jpg" alt="caja1" />
-            <img src="img/caja1.jpg" alt="caja1" />
-            <img src="img/caja3.jpg" alt="caja3" />
+        <!-- Artículos de cocina 03 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/Jarro1.jpeg" alt="Jarro1" />
+              <img src="img/Jarro.jpeg" alt="Jarro" />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Caja de herramientas 42cm x 22cm x 20cm</h3>
-          <p class="descripcion">
-           Caja de herramientas plástica con bandeja organizadora y asa reforzada.
-          </p>
-          <p class="precio">$15.000 ARS</p>
-        </div>
-      </div>
-     </section>
-    <!-- Sección Varios -->    
-     <section id="Varios" class="category-section">
-      <h2 class="category-title">Varios</h2>
-      <!-- Artículos Varios 01 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/maceterotriple.jpeg" alt="maceterotriple" />
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">
+              Jarro vIBRA 7180 fondo difusor c/tapa 2lts
+            </h3>
+            <p class="descripcion">
+              Jarro de 2 lts acero inox 3 fondos marca Vibra
+            </p>
+            <p class="precio">$100.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Macetero Triple</h3>
-          <p class="descripcion">
-            Especial para crear tu huerta de aromáticas en un pequeño espacio.
-          </p>
-          <p class="precio">$30.000 ARS</p>
-        </div>
-      </div>
-            <!-- Artículos Varios 02 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/Organizador1.jpeg" alt="Organizador1" />
-            <img src="img/Organizador2.jpeg" alt="Organizador2" />
-            <img src="img/Organizador3.jpeg" alt="Organizador3" />
+        <!-- Artículos de cocina 04 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/Asadera.jpeg" alt="Asadera" />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Organizador Varios / Zapatero</h3>
-          <p class="descripcion">
-            Especial para organizar distintos elementos del hogar, como zapatos, juguetes, herramientas, etc.
-          </p>
-          <p class="precio">$10.000 ARS</p>
-        </div>
-      </div>
-                  <!-- Artículos Varios 03 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/Canasta1.jpeg" alt="Canasta1" />
-            <img src="img/Canasta2.jpeg" alt="canasta2" />
-            
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Asadera horno 42cm x 34cm</h3>
+            <p class="descripcion">
+              Asadera para horno de 42cm x 34cm de acero esmaltado.
+            </p>
+            <p class="precio">Precio por unidad</p>
+            <p class="precio">$5.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Canasta de mimbre</h3>
-          <p class="descripcion">
-            Canasta de mimbre ideal para camping llevar el mate y pasar un lindo día al aire libre.
-          </p>
-          <p class="precio">$10.000 ARS</p>
-        </div>
-      </div>
-                        <!-- Artículos Varios 04 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/Balanza2.jpg" alt="Balanza2" />
-            <img src="img/Balanza1.jpg" alt="Balanza1" />
-            <img src="img/Balanza3.jpg" alt="Balanza3" />
-            
+        <!-- Artículos de cocina 05 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/moulinex.jpg" alt="Moulinex" />
+              <img src="img/moulinex1.jpg" alt="Moulinex1" />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Balanza personal</h3>
-          <p class="descripcion">
-            Balanza personal digital con pantalla LCD y capacidad de hasta 150 kg.
-          </p>
-          <p class="precio">$12.000 ARS</p>
-        </div>
-      </div>
-                              <!-- Artículos Varios 05 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/Tostadora.jpg" alt="Tostadora" />
-            <img src="img/Tostadora1.jpg" alt="Tostadora1" />            
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">
+Robot Cocina Multifuncion Moulinex c/ Jarra Licuadora 4 Accesorios = 19 Funciones 2,2 L</h3>
+            <p class="descripcion">
+              multifuncion moulinex con jarra licuadora y 4 accesorios para realizar 19 funciones diferentes.
+            </p>
+            <p class="precio">$100.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Tostadora Moulinex</h3>
-          <p class="descripcion">
-            Tostadora Moulinex  con capacidad para 2 rebanadas y múltiples niveles de tostado.
-          </p>
-          <p class="precio">$25.000 ARS</p>
-        </div>
-      </div>
-                                    <!-- Artículos Varios 06 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/caloventor.jpg" alt="caloventor" />
-            <img src="img/caloventor1.jpg" alt="caloventor1" />            
+      </section>
+      <!-- Sección Varios -->
+      <section id="Herramientas" class="category-section">
+        <h2 class="category-title">Herramientas</h2>
+        <!-- Artículos Varios 01 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/caja1.jpg" alt="caja1" />
+              <img src="img/caja2.jpg" alt="caja2" />
+              <img src="img/caja3.jpg" alt="caja3" />
+            </div>
+            <div class="carousel-indicators"></div>
           </div>
-          <div class="carousel-indicators"></div>
-        </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Caloventor portatil  220v</h3>
-          <p class="descripcion">
-            Caloventor portátil con termostato ajustable y función de seguridad contra sobrecalentamiento.
-          </p>
-          <p class="precio">$18.000 ARS</p>
-        </div>
-      </div>
-                                          <!-- Artículos Varios 06 -->
-      <div class="articulo" data-estado="disponible">
-        <div class="imagen-articulo carousel-container" aria-live="polite">
-          <div class="carousel-track">
-            <img src="img/alacena.jpg" alt="alacena" />            
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">
+              Caja de herramientas 42cm x 22cm x 20cm
+            </h3>
+            <p class="descripcion">
+              Caja de herramientas plástica con bandeja organizadora y asa
+              reforzada.
+            </p>
+            <p class="precio">$15.000 ARS</p>
           </div>
-          <div class="carousel-indicators"></div>
         </div>
-        <div class="articulo-content">
-          <h3 class="titulo-articulo">Mueble 1.8mts x 79cm </h3>
-          <p class="descripcion">
-           Mueble 1.8mts x 79cm de pino pintado con cetol Caoba, cajonera, puertas con vidrios repartidos y estantes internos.
-          </p>
-          <p class="precio">$150.000 ARS</p>
+      </section>
+      <!-- Sección Varios -->
+      <section id="Varios" class="category-section">
+        <h2 class="category-title">Varios</h2>
+        <!-- Artículos Varios 01 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/maceterotriple.jpeg" alt="maceterotriple" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Macetero Triple</h3>
+            <p class="descripcion">
+              Especial para crear tu huerta de aromáticas en un pequeño espacio.
+            </p>
+            <p class="precio">$30.000 ARS</p>
+          </div>
         </div>
-      </div>
+        <!-- Artículos Varios 02 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/Organizador1.jpeg" alt="Organizador1" />
+              <img src="img/Organizador2.jpeg" alt="Organizador2" />
+              <img src="img/Organizador3.jpeg" alt="Organizador3" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Organizador Varios / Zapatero</h3>
+            <p class="descripcion">
+              Especial para organizar distintos elementos del hogar, como
+              zapatos, juguetes, herramientas, etc.
+            </p>
+            <p class="precio">$10.000 ARS</p>
+          </div>
+        </div>
+        <!-- Artículos Varios 03 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/Canasta1.jpeg" alt="Canasta1" />
+              <img src="img/Canasta2.jpeg" alt="canasta2" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Canasta de mimbre</h3>
+            <p class="descripcion">
+              Canasta de mimbre ideal para camping llevar el mate y pasar un
+              lindo día al aire libre.
+            </p>
+            <p class="precio">$10.000 ARS</p>
+          </div>
+        </div>
+        <!-- Artículos Varios 04 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/Balanza2.jpg" alt="Balanza2" />
+              <img src="img/Balanza1.jpg" alt="Balanza1" />
+              <img src="img/Balanza3.jpg" alt="Balanza3" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Balanza personal</h3>
+            <p class="descripcion">
+              Balanza personal digital con pantalla LCD y capacidad de hasta 150
+              kg.
+            </p>
+            <p class="precio">$12.000 ARS</p>
+          </div>
+        </div>
+        <!-- Artículos Varios 05 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/Tostadora.jpg" alt="Tostadora" />
+              <img src="img/Tostadora1.jpg" alt="Tostadora1" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Tostadora Moulinex</h3>
+            <p class="descripcion">
+              Tostadora Moulinex con capacidad para 2 rebanadas y múltiples
+              niveles de tostado.
+            </p>
+            <p class="precio">$25.000 ARS</p>
+          </div>
+        </div>
+        <!-- Artículos Varios 06 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/caloventor.jpg" alt="caloventor" />
+              <img src="img/caloventor1.jpg" alt="caloventor1" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Caloventor portatil 220v</h3>
+            <p class="descripcion">
+              Caloventor portátil con termostato ajustable y función de
+              seguridad contra sobrecalentamiento.
+            </p>
+            <p class="precio">$18.000 ARS</p>
+          </div>
+        </div>
+        <!-- Artículos Varios 07 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/alacena.jpg" alt="alacena" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Mueble 1.8mts x 79cm</h3>
+            <p class="descripcion">
+              Mueble 1.8mts x 79cm de pino pintado con cetol Caoba, cajonera,
+              puertas con vidrios repartidos y estantes internos.
+            </p>
+            <p class="precio">$150.000 ARS</p>
+          </div>
+        </div>
+        <!-- Artículos Varios 08 -->
+        <div class="articulo" data-estado="disponible">
+          <div class="imagen-articulo carousel-container" aria-live="polite">
+            <div class="carousel-track">
+              <img src="img/silla.jpg" alt="silla" />
+            </div>
+            <div class="carousel-indicators"></div>
+          </div>
+          <div class="articulo-content">
+            <h3 class="titulo-articulo">Sillas Reyna Blanca</h3>
+            <p class="descripcion">
+              sillas apilables de plástico color blanco, ideales para eventos y
+              uso diario.
+            </p>
+            <p class="precio">$12.000 ARS</p>
+            <p class="precio">
+              El precio es por unidad 11 unidades disponibles
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    </section>
-  </main>
+    <!-- Footer -->
+    <footer class="page-footer" aria-label="Pie de página">
+      <p>&copy; 2025 El galpón de Pablo - Todos los derechos reservados.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="page-footer" aria-label="Pie de página">
-    <p>&copy; 2025 El galpón de Pablo - Todos los derechos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
