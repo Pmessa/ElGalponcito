@@ -66,17 +66,53 @@ document.querySelectorAll('.carousel-container').forEach(container => {
     }
   });
 });
-    (function(){
-      const btn = document.querySelector('.back-to-top');
-      const showAt = 300; // px
-      if(!btn) return;
-      const onScroll = () => {
-        if(window.scrollY > showAt) {
-          btn.style.display = 'inline-block';
-        } else {
-          btn.style.display = 'none';
-        }
-      };
-      window.addEventListener('scroll', onScroll);
-      onScroll();
-    })();
+    // (function(){
+    //   const btn = document.querySelector('.back-to-top');
+    //   const showAt = 300; // px
+    //   if(!btn) return;
+    //   const onScroll = () => {
+    //     if(window.scrollY > showAt) {
+    //       btn.style.display = 'inline-block';
+    //     } else {
+    //       btn.style.display = 'none';
+    //     }
+    //   };
+    //   window.addEventListener('scroll', onScroll);
+    //   onScroll();
+    // })();
+    (function() {
+  const btn = document.querySelector('.back-to-top');
+  const showAt = 300;
+  if (!btn) return;
+
+  const showClass = 'show';
+  const show = () => btn.classList.add(showClass);
+  const hide = () => btn.classList.remove(showClass);
+
+  const getScrollY = () => window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  let ticking = false;
+  const onScroll = () => {
+    const y = getScrollY();
+    if (y > showAt) {
+      show();
+    } else {
+      hide();
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  onScroll();
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
