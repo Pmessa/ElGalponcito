@@ -237,7 +237,11 @@ html {
   bottom: 20px;
   right: 20px;
   display: none;
-  background: #007bff8a;
+    background: linear-gradient(
+    90deg,
+    #006d77,
+    #83c5be
+  );
   color: white;
   padding: 10px 14px;
   border-radius: 6px;
@@ -246,7 +250,7 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .back-to-top:hover {
-  background: #0056b3;
+  background: #006d77ce;
 }
 .back-to-top {
   display: none;
