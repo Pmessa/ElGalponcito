@@ -214,3 +214,27 @@ body {
     height: 300px;
   }
 }
+   @media (min-width: 0) {
+      body:not(.show-back) .back-to-top { display: none; }
+    }
+
+  html{
+      scroll-behavior: smooth;
+    }
+    /* Botón “volver arriba” básico */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background: #007bff;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    }
+    .back-to-top:hover {
+      background: #0056b3;
+    }

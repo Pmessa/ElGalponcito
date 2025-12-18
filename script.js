@@ -66,3 +66,17 @@ document.querySelectorAll('.carousel-container').forEach(container => {
     }
   });
 });
+    (function(){
+      const btn = document.querySelector('.back-to-top');
+      const showAt = 300; // px
+      if(!btn) return;
+      const onScroll = () => {
+        if(window.scrollY > showAt) {
+          btn.style.display = 'inline-block';
+        } else {
+          btn.style.display = 'none';
+        }
+      };
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+    })();
