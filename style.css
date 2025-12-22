@@ -14,7 +14,11 @@ body {
 
 /* Encabezado */
 .page-header {
-  background: linear-gradient(90deg, #006d77, #83c5be); /* verde azulado → celeste */
+  background: linear-gradient(
+    90deg,
+    #006d77,
+    #83c5be
+  ); /* verde azulado → celeste */
   color: #fff;
   padding: 1rem;
   position: relative;
@@ -136,7 +140,34 @@ body {
   color: #2a9d8f; /* verde brillante */
   font-size: 1rem;
 }
-
+.rebajado {
+  font-weight: bold;
+  color: #e63946; /* rojo brillante */
+  font-size: 1.1rem;
+}
+/* Estilo base para elementos con la clase .rebajado */
+.rebajado {
+  position: relative;           /* para poder mover dentro del flujo sin desplazar otros elementos */
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ffd700 0%, #ffcc00 60%, #ffa500 100%); /* color cálido suave */
+  color: #1a1a1a;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transform: translateZ(0);      /* mejora rendimiento en algunas animaciones */
+  transition: transform 0.35s cubic-bezier(.25,.8,.25,1),
+              box-shadow 0.35s ease,
+              background 0.35s ease;
+  user-select: none;
+  will-change: transform;
+}
+.rebajado.arriba {
+  animation: rebajadoFade 4s ease-in-out infinite;
+}
+@keyframes rebajadoFade {
+  0%, 100% { opacity: 0.95; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-1px); }
+}
 /* Carrusel */
 .carousel-container {
   position: relative;
@@ -183,7 +214,11 @@ body {
 
 /* Footer */
 .page-footer {
-  background: linear-gradient(90deg, #6d6875, #b5838d); /* marrón grisáceo → marrón rosado */
+  background: linear-gradient(
+    90deg,
+    #6d6875,
+    #b5838d
+  ); /* marrón grisáceo → marrón rosado */
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -213,4 +248,40 @@ body {
   .carousel-track img {
     height: 300px;
   }
+}
+/* @media (min-width: 0) {
+  body:not(.show-back) .back-to-top {
+    display: none;
+  }
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+/* Botón “volver arriba” básico */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+    background: linear-gradient(
+    90deg,
+    #006d77,
+    #83c5be
+  );
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.back-to-top:hover {
+  background: #006d77ce;
+}
+.back-to-top {
+  display: none;
+}
+.back-to-top.show {
+  display: inline-block;
 }
