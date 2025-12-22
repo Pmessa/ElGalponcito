@@ -140,24 +140,34 @@ body {
   color: #2a9d8f; /* verde brillante */
   font-size: 1rem;
 }
-
-/* .rebajado {
-  position: relative;
+.rebajado {
+  font-weight: bold;
+  color: #e63946; /* rojo brillante */
+  font-size: 1.1rem;
+}
+/* Estilo base para elementos con la clase .rebajado */
+.rebajado {
+  position: relative;           /* para poder mover dentro del flujo sin desplazar otros elementos */
   display: inline-block;
   padding: 0.25em 0.5em;
   border-radius: 6px;
-  background: linear-gradient(135deg, #ffd700 0%, #ffcc00 60%, #ffa500 100%); 
+  background: linear-gradient(135deg, #ffd700 0%, #ffcc00 60%, #ffa500 100%); /* color cálido suave */
   color: #1a1a1a;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transform: translateZ(0);     
+  transform: translateZ(0);      /* mejora rendimiento en algunas animaciones */
   transition: transform 0.35s cubic-bezier(.25,.8,.25,1),
               box-shadow 0.35s ease,
               background 0.35s ease;
   user-select: none;
   will-change: transform;
-} */
-
-
+}
+.rebajado.arriba {
+  animation: rebajadoFade 4s ease-in-out infinite;
+}
+@keyframes rebajadoFade {
+  0%, 100% { opacity: 0.95; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-1px); }
+}
 /* Carrusel */
 .carousel-container {
   position: relative;
